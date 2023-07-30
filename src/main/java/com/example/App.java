@@ -35,7 +35,7 @@ public class App {
             int cols = metadata.getColumnCount();
 
             for (int i = 1; i <= cols; i++) {
-                System.out.printf("%-25s | ", metadata.getColumnName(i));
+                System.out.printf("%-25s | ", metadata.getColumnName(i)); /* -25 significa que o valor da string ocupará 25 caracteres e alinhado à esquerda (o sinal de - indica isso)*/
             }
             System.out.println();
 
@@ -95,4 +95,5 @@ public class App {
             System.err.println("Não foi possível carregar a biblioteca para acesso ao banco de dados: " + e.getMessage());
         }
     }
+
 }
